@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Nunito+Sans:opsz,wght@6..12,700&family=Playfair+Display:wght@400;500&family=Bitter:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="d-none d-lg-block bg-light sidebar">
+                <div class="sidebar-sticky d-flex flex-column h-100">
+
+                    <img class="rotated-image mt-4" src="components/icons8-butterfly-94.png" alt="butterfly">
+
+                    <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-5">
+                            <a href="#" class="nav-link ">
+                                <span class="material-symbols-outlined fa-sm">
+                                    search
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-4 mt-4">
+                            <a href="#" class="nav-link active">
+                                <span class="material-symbols-outlined fa-sm">
+                                    home
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link">
+                                <span class="material-symbols-outlined fa-sm">
+                                    newsmode
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link">
+                                <span class="material-symbols-outlined fa-sm">
+                                    list_alt
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link">
+                                <span class="material-symbols-outlined fa-sm">
+                                    person
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav flex-column mt-auto">
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link">
+                                <span class="material-symbols-outlined fa-sm">
+                                    notifications_unread
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="material-symbols-outlined fa-sm">
+                                    move_item
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main">
+
+                <div class="welcome mt-5 ">
+                    <img src="https://media.istockphoto.com/id/666942626/photo/skateboarder-young-teenager-man-isolated.jpg?s=2048x2048&w=is&k=20&c=wVKrTjsYc_wWkMZzShnF3RNwiuB0w0dibRibgW6xOLs="
+                        alt="..." class="rounded-circle" width="75px" height="75px">
+
+                    <span class="name">
+
+                        <h2 class="mb-0">Hi Mike,</h2>
+                        <p class="gray">welcome back.</p>
+                    </span>
+                </div>
+                <div class="earnings mt-3 ">
+                    <div class="balance m-0">
+                        <h6 class="mb-3 headings">Today</h6>
+                        <h2 class="amount mb-0 ">$19,892</h2>
+                        <p class="mb-3 gray">Account Balance</p>
+                    </div>
+
+                    <div class="contributions_interest m-0">
+                        <div class="year-to-date m-0">
+                            <h5 class="amount mb-0">$4,000</h5>
+                            <p class="mb-3 gray">Year-to-Date Contributions</p>
+                        </div>
+
+                        <div class="interest m-0">
+                            <h5 class="amount mb-0">$1,892</h5>
+                            <p class="gray">Total interest</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        I want to
+                    </button>
+                </div>
+
+                <div class="transactions mt-5 ">
+                    <h6 class="mb-4 headings">Recent Transactions</h6>
+                    <p class="gray mb-0">2020-08-07</p>
+                    <p class="transfer mb-3">Withdrawl Tranfer to Bank-XXX11</p>
+                    <div class="line"></div>
+                    <p class="gray mb-0 mt-3">2020-07-21</p>
+                    <p class="transfer mb-3">Withdrawl Tranfer to Bank-XXX11</p>
+                    <div class="line "></div>
+                    <p class="gray mb-0 mt-3">2020-07-16</p>
+                    <p class="transfer mb-3">Withdrawl Tranfer to Bank-XXX11</p>
+                    <div class="line "></div>
+                </div>
+
+                <nav class="navbar navbar-expand-md  fixed-bottom  bg-light d-block d-lg-none w-100">
+                    <ul class="nav d-flex">
+
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link active mx-4">
+                                <span class="material-symbols-outlined fa-sm">
+                                    home
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link mx-4">
+                                <span class="material-symbols-outlined fa-sm">
+                                    newsmode
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link mx-4">
+                                <span class="material-symbols-outlined fa-sm">
+                                    list_alt
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link mx-4">
+                                <span class="material-symbols-outlined fa-sm">
+                                    person
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link mx-2">
+                                <span class="material-symbols-outlined fa-sm">
+                                    search
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="analysis mt-5 ">
+                <div class="goal-planning ">
+                    <div class="retirement ">
+                        <p class="mb-0">Retirement Income</p>
+                        <h3>Starting Year 2056</h3>
+                    </div>
+                    <div class="goals mt-5 ">
+                        <div class="m-0">
+                            <h3 class="mb-0">$300,000</h3>
+                            <p class="gray">My Goal</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="acheived_income">
+                            <div class="m-0">
+                                <h3 class="mb-0">59%</h3>
+                                <p class="gray">Goal Achieved</p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="m-0">
+                                <h3 class="mb-0">$300</h3>
+                                <p class="gray">Est. Monthly Income</p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart mt-5">
+                    <h4>Contributions Over-time</h4>
+                    <div class="canvas-container">
+                        <canvas id="myStyledChart"></canvas>
+                    </div>
+                </div>
+                <div class="compare mt-5">
+                    <h4>How do I compare to my peers?</h4>
+                    <p class="gray">These numbers represent current goal achievement</p>
+                    <div class="category">
+                        <div class="options">
+                            <select class="form-control mb-2">
+                                <option>Age: Under 30</option>
+                                <option>Age: Under 35</option>
+                                <option>Age: Under 40</option>
+                            </select>
+                            <select class="form-control mb-2">
+                                <option>Salary: K 20 - K 30</option>
+                                <option>Salary: K 30 - K 40</option>
+                                <option>Salary: K 40 - K 60</option>
+                            </select>
+                            <select class="form-control mb-2">
+                                <option>Gender: Male</option>
+                                <option>Gender: Female</option>
+                            </select>
+                        </div>
+
+                        <div class="charts">
+                            <div class="chart-item">
+                                <canvas id="chart1"></canvas>
+                                <div class="chart-title">Average</div>
+                            </div>
+                            <div class="chart-item">
+                                <canvas id="chart2"></canvas>
+                                <div class="chart-title">Top</div>
+                            </div>
+                            <div class="chart-item">
+                                <canvas id="chart3"></canvas>
+                                <div class="chart-title">Me</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="card mt-5 ">
+                <div class="card-body">
+                    <h5 class="card-title">Retirement strategy</h5>
+                    <div class="w-100">
+                        <p>Employee Contribution</p>
+                        <input type="range" class="form-range" min="0" max="100" id="customRange"
+                            oninput="updateRange1(this.value)" />
+                        <span id="rangeValue1">50%</span>
+                        <script>
+                            function updateRange1(value) {
+                                document.getElementById('rangeValue1').textContent = value + '%';
+                            }
+                        </script>
+                    </div>
+                    <div class="mt-3">
+                        <p>Retirement Age</p>
+                        <input type="range" class="form-range" min="0" max="70" id="customRange"
+                            oninput="updateRange2(this.value)" />
+                        <span id="rangeValue2">50</span>
+                        <script>
+                            function updateRange2(value) {
+                                document.getElementById('rangeValue2').textContent = value;
+                            }
+                        </script>
+                    </div>
+                    <div class="line mt-3"></div>
+                    <div class="grid gap-3" style="display: flex;">
+                        <div class="mt-3 w-75">Employer Contribution</div>
+                        <div class="mt-3">8.4%</div>
+
+                    </div>
+                    <div class="grid gap-3" style="display: flex;">
+
+                        <div class="mt-3 w-75">Interest Rate </div>
+                        <div class="mt-3">5%</div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary w-100 mt-5 p-3">Update</button>
+                    </div>
+                </div>
+                <div class="mt-5 pl-3 pr-2 mb-5housing_advance" style="border-left: 2px solid blueviolet;">
+                    <h6>Are You Considering a <strong>Housing Advance?</strong></h6>
+                    <p class="gray">Limited time reduced interest</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          
+            var navLinks = document.querySelectorAll(".nav-link");
+
+          
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    
+                    navLinks.forEach(function (navLink) {
+                        navLink.classList.remove("active");
+                    });
+
+                    link.classList.add("active");
+                });
+            });
+        });
+    </script>
+    <script>
+        // Get the context of the canvas element
+        var ctx = document.getElementById('myStyledChart').getContext('2d');
+
+        // Define your data
+        var data = {
+            labels: ['20', '', '25', '', '30', '', '35', '', '40', '', '60', '', '65'],
+            datasets: [
+                {
+                    label: 'Employer:K 73,500',
+                    data: [20, 25, 30, 33, 35, 40, 45, 50, 60, 65, 75, 80, 90],
+                    backgroundColor: '#0E32AD ',
+                    stack: 'Stack 1' // Specify the stack name
+                },
+                {
+                    label: 'Employe: K 52,500',
+                    data: [20, 25, 25, 32, 35, 40, 50, 55, 60, 70, 75, 80, 90],
+                    backgroundColor: '#1C48DF ',
+                    stack: 'Stack 1' // Specify the same stack name as the first dataset
+                },
+                {
+                    label: 'Total Interest: K 244,313',
+                    data: [30, 30, 45, 40, 50, 55, 65, 75, 85, 95, 105, 110, 125],
+                    backgroundColor: '#8CA5FA ',
+                    stack: 'Stack 1' // Specify the same stack name as the first dataset
+                }
+            ]
+        };
+
+        // Configure the chart
+        var options = {
+            scales: {
+                x: {
+                    stacked: true,
+                    grid: {
+                        display: false,
+                        drawOnChartArea: false
+                    },
+                    ticks: {
+                        font: {
+                            size: 14,
+                            family: 'Arial',
+                            weight: 'bold'
+                        },
+                    },
+                },
+                y: {
+                    stacked: true,
+                    grid: {
+                        display: true,
+                    },
+                    ticks: {
+                        stepSize: 100,
+                        max: 300,
+                        font: {
+                            size: 14,
+                            family: 'Arial',
+                            weight: 'bold'
+                        },
+                        callback: function (value, index, values) {
+                            return '$' + value;
+                        },
+                    },
+                },
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                },
+            },
+
+            barPercentage: 0.4, // Adjust the width of the bars
+            categoryPercentage: 0.9, // Adjust the spacing between the bars
+        };
+
+        // Create the chart
+        var myStyledChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+
+    <script>
+        // Function to create a percentage circle chart
+        function createPercentageCircleChart(canvasId, percentage) {
+            var ctx = document.getElementById(canvasId).getContext('2d');
+
+            // Calculate the remaining percentage to fill the circle
+            var remainingPercentage = 100 - percentage;
+
+            // Configure the chart
+            var options = {
+                cutout: '75%', // Adjust the cutout percentage to control the thickness of the circle
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        enabled: false,
+                    },
+                },
+            };
+
+            // Create the chart
+            var percentageCircleChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Completed', 'Remaining'],
+                    datasets: [
+                        {
+                            data: [percentage, remainingPercentage],
+                            backgroundColor: ['#41E0A1 ', '#A9F9DA '],
+                            hoverOffset: 4,
+                        },
+                    ],
+                },
+                options: options,
+            });
+        }
+
+        // Create three percentage circle charts with different percentages
+        createPercentageCircleChart('chart1', 78);
+        createPercentageCircleChart('chart2', 95);
+        createPercentageCircleChart('chart3', 59);
+    </script>
+
+</body>
+
+
+</html>
